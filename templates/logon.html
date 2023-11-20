@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="{{ url_for('static', filename='whatsapptwo16.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <title>Whats</title>
+    </head>
+
+    <body>
+        <div id="box">
+            <div id="boxLength">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-4">
+                        <img src="{{ url_for('static', filename='whatsapptwo128.png') }}" alt="Logo">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1>Whatsapp</h1>
+                        <h2>2</h2>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg" style="height: 70px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg text-white">Insira seu nome:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+                            <input type="text" id="nick" placeholder="Nome">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg" style="height: 50px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+                            <a href="{{ url_for('topics') }}"><button id="entrar"><h2>Entrar</h2></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      </body>
+</html>

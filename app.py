@@ -1,7 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
-    return "Hello World!"
+    return render_template('logon.html')
+
+@app.route('/topics')
+def topics():
+    return render_template('topics.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
